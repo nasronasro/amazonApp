@@ -1,7 +1,7 @@
 <?php
     require_once "headerView.php";
 ?>
-<form method="post" action="login.php">
+<form method="post" action="../login.php">
   <div class="form-group">
     <label for="LoginInput">Login</label>
     <input type="text" class="form-control" name="login" id="LoginInput" aria-describedby="loginHelp" placeholder="Your login">
