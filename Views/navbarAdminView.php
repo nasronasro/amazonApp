@@ -6,19 +6,19 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+        <a class="nav-link" href="http://localhost:3000/Views/AcceuilView.php">Home <span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="CategoriesView.php">Categories</a>
+        <a class="nav-link" href="http://localhost:3000/Views/CategoriesView.php">Categories</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="ProductsView.php">Products</a>
+        <a class="nav-link" href="http://localhost:3000/Views/ProductsView.php">Products</a>
       </li>
     </ul>
     <span class="navbar-text">
       <?php 
       if(isset($_SESSION["AdminNom"]))
-        $_SESSION["AdminNom"];
+        echo "<p>", $_SESSION["AdminNom"], "</p>";
       else
         echo "<a href='loginView.php' class='btn btn-primary'>Login</a>"
       ?>

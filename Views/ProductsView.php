@@ -1,5 +1,7 @@
 <?php
     session_start();
+    require_once "../func.php";
+    CheckConnection("loginView.php");
     require_once "headerView.php";
     require_once "navbarAdminView.php"
 ?>
