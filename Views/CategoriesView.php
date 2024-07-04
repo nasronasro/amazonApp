@@ -5,7 +5,21 @@
 ?>
 <div class="content d-flex w-100 vh-100" >
     <div class="w-75">
-        <p>Notre website content</p>
+    <table class="table">
+  <thead>
+    <tr>
+    <th scope="row">idProduct</th>
+    <th>Category name</th>
+    <th colspan="2">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php 
+        include_once "../requets.php";
+        DisplayCategories();
+    ?>
+  </tbody>
+</table>
     </div>
     <div class="w-25">
         <p>ads</p>
