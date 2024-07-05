@@ -1,7 +1,7 @@
 <?php 
 session_start();
 require_once "../func.php";
-require_once "../requets.php";
+require_once "../Modules/requets.php";
 CheckConnection("../Views/loginView.php");
 if(!isset($_GET["idmod"]) && !isset($_SESSION["idmod"])){
     RedirectTo("../Views/ProductsView.php");

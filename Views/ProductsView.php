@@ -21,7 +21,7 @@
   </thead>
   <tbody>
     <?php 
-        include_once "../requets.php";
+        include_once "../Modules/requets.php";
         DisplayProducts();
     ?>
   </tbody>

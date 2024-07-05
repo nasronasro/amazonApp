@@ -8,7 +8,7 @@ if(!isset($_GET["idmod"]) && !isset($_SESSION["idmod"])){
 }else if(isset($_GET["idmod"]))
     $_SESSION["idmod"] = $_GET["idmod"];
 else if(isset($_POST["label"])){
-    require_once "../requets.php";
+    require_once "../Modules/requets.php";
     $id = $_SESSION["idmod"];
     $label = $_POST["label"];
     ModifyCategory($id,$label);
