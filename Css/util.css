@@ -1,0 +1,27 @@
+.card-container , .ads, footer{
+    margin : 20px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+.card{
+    margin: 20px;
+    min-height: 350px;
+    justify-content: center;
+    max-width: 210px;
+}
+.card .img-container{
+
+    margin: 10px auto;
+    min-height:200px;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid green;
+}
+
+.card>* {
+    margin: 10px auto;
+}
+.ads, footer{
+    color: white;
+}

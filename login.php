@@ -11,6 +11,10 @@
     }
 
     require_once "requets.php";
+    if(SelectUser($login,$pass) != false){
+        RedirectTo("Views/HomeView.php");
+    }
+
     //select element to check if the login is correct
     if(SelectAdmin($login,$pass) == false)
         RedirectTo("Views/loginView.php");
