@@ -23,8 +23,8 @@
     </ul>
     <span class="navbar-text">
       <?php 
-      if(isset($_SESSION["AdminNom"]))
-        echo "<p>", $_SESSION["AdminNom"], "</p>";
+      if(isset($_SESSION["UserNom"]))
+        echo "<details><summary>", $_SESSION["UserNom"], "</summary><a href='LogOut.php' class='btn btn-primary'>Out</a> </detail>";
       else
         echo "<a href='loginView.php' class='btn btn-primary'>Login</a>"
       ?>

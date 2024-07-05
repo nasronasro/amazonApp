@@ -12,13 +12,15 @@
 
     require_once "Modules/requets.php";
     if(SelectUser($login,$pass) != false){
+        $_SESSION["UserNom"] = SelectUser($login,$pass);
         RedirectTo("Views/HomeView.php");
     }
 
     //select element to check if the login is correct
-    if(SelectAdmin($login,$pass) == false)
-        RedirectTo("Views/loginView.php");
-    
-    $_SESSION["AdminNom"] = SelectAdmin($login,$pass);
-    RedirectTo("Views/AcceuilView.php");
+    if(SelectAdmin($login,$pass) != false){
+        $_SESSION["AdminNom"] = SelectAdmin($login,$pass);
+        RedirectTo("Views/AcceuilView.php");
+    }
+     
+    RedirectTo("Views/loginView.php");
 ?>
