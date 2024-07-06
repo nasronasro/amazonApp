@@ -1,5 +1,3 @@
-
-
 <?php 
     require_once "../Controllers/resizeController.php";
     foreach($data as $line){ 
@@ -12,14 +10,14 @@
                 <img class="card-img-top" src="..." alt="Card image cap">
             </div>
             <div class="card-body">
-                <p class="card-title"><?= $line["label"] ?></p>
+                <p class="card-title" id="product-name<?=$i?>"><?= $line["label"] ?></p>
                 <div class="d-flex gap-1">
                     <div>
-                        <p >$<?= $line["prix"] ?></p> 
+                        <p id="product-price<?=$i?>">$<?= $line["prix"] ?></p> 
                     </div>  
                 </div>
                 <div>
-                    <input type="button" value="Add To Cart" class="btn btn-primary">
+                    <input type="button" class="btn btn-primary addToCart" id="AddCart<?=$i?>" value="Add To Cart">
                 </div>
             </div>
         </div>
@@ -31,3 +29,4 @@
         if($i%4 != 0)
             echo "</div>";
 ?>
+<script src="../js/addCartAjax.js"></script>

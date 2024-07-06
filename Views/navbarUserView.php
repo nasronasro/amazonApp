@@ -9,7 +9,7 @@
         <a class="nav-link" href="http://localhost:3000/Views/HomeView.php">Home <span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="http://localhost:3000/Views/HomeView.php">Home</a>
+        <a class="nav-link" href="http://localhost:3000/Views/ListOfCartItems.php">My Cart</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="http://localhost:3000/Views/HomeView.php">Home</a>

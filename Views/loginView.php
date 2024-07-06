@@ -1,6 +1,8 @@
 <?php
     require_once "headerView.php";
 ?>
+<link rel="stylesheet" href="../css/loginForm.css">
+<div class="loginForm">
 <form method="post" action="../login.php">
   <div class="form-group">
     <label for="LoginInput">Login</label>
@@ -13,7 +15,7 @@
   </div>
   <button type="submit" class="btn btn-primary">Login</button>
 </form>
-
+</div>
 <?php 
     require_once "footerView.php";
 ?>

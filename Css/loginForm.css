@@ -1,0 +1,16 @@
+.loginForm{
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    align-items: center ;
+    background-color: black;
+    margin: 20px;
+    border-radius: 20px ;
+}
+.loginForm form{
+    max-width: 400px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #E5E5E5;
+    padding: 40px 20px;
+}
