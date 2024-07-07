@@ -8,16 +8,35 @@
     <link rel="stylesheet" href="../css/product.css">
     <div class="d-flex">
         <div class="Container main-container d-flex flex-column w-75">
+            
             <?php 
-                if(isset($_SESSION["currentCart"])){                 
+                if(isset($_SESSION["currentCart"])){
+            ?>
+                    <div>
+                        <input type="button" value="reset" id="resetBtn">
+                    </div>  
+            <?php       
                     foreach($_SESSION["currentCart"] as $product)
                     {
-            ?>
+            ?>          
                         <div class="product">
-                            <p class="productname"><?=$product["name"]?></p>
-                            <p class="productprice"><?=$product["price"]?></p>
+                            <div class="d-flex ">
+                                <p>Name : </p>
+                                <p class="productname"><?=$product["name"]?></p>
+                            </div>
+                            <div class="d-flex">
+                                <p>Price : </p>
+                                <p class="productprice"><?=$product["price"]?></p>
+                            </div>
+                            <div class="d-flex">
+                                <p>Quantite : </p>
+                                <p class="productQte"><?=$product["Quantite"]?></p>
+                            </div>
+                           
+                            
+                            <input type="button" class="btn btn-primary removeBtn" id="remove<?=$product["id"]?>" value="remove">
                         </div>
-            <?php
+            <?php      
                     }
                 }else{
             ?>
@@ -33,3 +52,5 @@
 <?php 
     require_once "footerView.php";
 ?>
+<script src="../js/RemoveFromCartAjax.js"></script>
+<script src="../js/ResetCartAjax.js"></script>

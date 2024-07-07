@@ -15,9 +15,10 @@
                     <div>
                         <p id="product-price<?=$i?>">$<?= $line["prix"] ?></p> 
                     </div>  
+                    
                 </div>
                 <div>
-                    <input type="button" class="btn btn-primary addToCart" id="AddCart<?=$i?>" value="Add To Cart">
+                    <a href="ProductView.php?name=<?=$line["label"]?>&id=<?=$i?>" class="btn btn-primary addToCart">View More</a>
                 </div>
             </div>
         </div>
@@ -29,4 +30,3 @@
         if($i%4 != 0)
             echo "</div>";
 ?>
-<script src="../js/addCartAjax.js"></script>
